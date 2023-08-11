@@ -1,2 +1,3 @@
-# DataScience
- Proyecto recomendador de series
+# AniRec
+
+Proyecto de Data Science recomendador de series
