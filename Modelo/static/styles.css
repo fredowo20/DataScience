@@ -1,0 +1,46 @@
+body {
+    background-image: url('https://images.alphacoders.com/968/968167.png');
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.ui-autocomplete {
+    position: absolute;
+    z-index: 1051;  /* Overlap Bootstrap's dropdown and navbar */
+    cursor: default;
+    border: 1px solid #ccc;
+    background: #fff;
+    display: none;
+}
+
+.ui-menu-item-wrapper {
+    padding: 2px 1em 2px .4em;
+    cursor: pointer;
+}
+
+.ui-menu .ui-menu-item-wrapper.ui-state-active {
+    background: #007bff;
+    color: #fff;
+}
+
+#col-sm1 {
+    text-align: center;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card-footer {
+    text-align: center;
+}

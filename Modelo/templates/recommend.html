@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anime Recommendations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Anime Recommendation System</a>
+    </nav>
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+        <div class="card">
+            <div class="card-header">
+                <h2>{{ rec.title }}</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm" id="col-sm1">
+                        <img src="{{ rec.image_url }}" alt="{{ rec.title }}" class="img-fluid">
+                    </div>
+                    <div class="col-sm">
+                        <h5>Synopsis:</h5>
+                        <p>{{ rec.synopsis }}</p>
+                        <h5>Genres:</h5>
+                        <p>{{ rec.genre }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <form action="/next" method="get">
+                    <button type="submit" class="btn btn-info">Next Recommendation!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
